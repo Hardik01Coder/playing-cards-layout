@@ -4,48 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Focus on Today</title>
+  <title>Modal Popup</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
-  <script src="script.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inika:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1 class="title">Focus on <span>Today</span></h1>
-    <div class="app-container">
-      <div class="header-with-icon">
-        <h2>Today</h2>
-        <img class="sun-icon" src="./assets/sun.svg" alt="sun">
-      </div>
-      <p class="progress-label">Raise the bar by completing your goals!</p>
-      <div class="progress-bar">
-        <div class="progress-value"><span></span></div>
-      </div>
-      <p class="error-label">Please set all the 3 goals!</p>
-      <div class="goal-container">
-        <div class="checkbox">
-          <img class="check-icon" src="/assets/tick-icon.svg" alt="tick-icon">
-        </div>
-        <input type="text" class="goal-input" placeholder="Add new goal..." id="first">
-      </div>
-      <div class="goal-container">
-        <div class="checkbox">
-          <img class="check-icon" src="/assets/tick-icon.svg" alt="tick-icon">
-        </div>
-        <input type="text" class="goal-input" placeholder="Add new goal..." id="second">
-      </div>
-      
-      <div class="goal-container">
-        <div class="checkbox">
-          <img class="check-icon" src="/assets/tick-icon.svg" alt="tick-icon">
-        </div>
-        <input type="text" class="goal-input" placeholder="Add new goal..." id="third">
-      </div>
-      
-      <blockquote class="quote">"Move one step a head, today"</blockquote>
-      <p class="creator">Made with ❤️ by Hardik Chaurasia</p>
-  </main>
+<div class="main-popup">
+  <div class="popup">
+    <div class="content">
+    <img class="custom-popup-img" src="./assets/popup-img.svg" alt="popup-image">
+      <div class="text">
+        <img class="cancel" src="./assets/cancel-icon.svg" alt="cancel">
+    <h2>Don't miss out.</h2>
+    <p>Sign up for our newsletter to stay in the loop.</p>
+    </div>
+    </div>
+    <div class="newsletter">
+    <input type="email" placeholder="EMAIL ADDRESS">
+    <button>SUBSCRIBE</button>
+    </div>
+  </div>
+  <div class="popup-container">
+    <button>Get Newsletter</button>
+    <img src="./assets/cursor-icon.svg" alt="cursor-icon">
+    </div>
+     </div>
 </body>
 </html>
