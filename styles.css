@@ -1,0 +1,153 @@
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-image: url('./assets/wooden-background.png');
+      padding: 40px 20px;
+    }
+    
+    header {
+      text-align: center;
+      margin-block: 2rem;
+      color: #2c3e50;
+    }
+    
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .card {
+      width: 220px;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      margin-top: 1rem;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 14px 50px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    }
+    
+    .left {
+      align-self: flex-start;
+      color: red;
+    }
+    
+    .left p,
+    .right p {
+      color: red;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .left p span,
+    .right p span {
+      display: block;
+      margin-top: -10px;
+    }
+    
+    .card-2 .left p,
+    .card-2 .right p {
+      color: black;
+    }
+    
+    .right {
+      transform: scale(-1);
+    }
+    
+    .middle {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      font-size: 50px;
+    }
+    
+    .middle img {
+      width: 90%;
+      height: 100%;
+      border: 1px solid black;
+      margin-inline: auto;
+    }
+    
+    .card-one-hearts {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      color: red;
+      margin-block: 6px;
+      font-size: 70px;
+    }
+    
+    .card-3 .left p,
+    .card-3 .right p {
+      color: black;
+    }
+    
+    .card-one-hearts p {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    
+    .card-one-hearts .center {
+      margin-block: auto;
+    }
+    
+    .card-one-bottom-hearts {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+    
+    .card-3 .middle {
+      height: 100%;
+      margin-inline: 6px;
+    }
+    
+    .card-3 .middle p {
+      display: flex;
+      flex-direction: row;
+      line-height: 1.2;
+      align-items: center;
+      margin-block: auto;
+    }
+    
+    .card-3 .center {
+      font-size: 40px;
+    }
+    
+    .top,
+    .bottom {
+      display: inline-block;
+      transform: scaleY(-1);
+    }
+    
+    .right-side {
+      text-align: right;
+    }
+    
+    .right {
+      align-self: flex-end;
+    }
+    
+    @media(min-width: 768px) {
+      header {
+        margin-block: 6rem 4rem;
+        font-size: 24px;
+      }
+    }
